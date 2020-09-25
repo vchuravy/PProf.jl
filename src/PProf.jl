@@ -319,7 +319,7 @@ default arguments.
 macro pprof(ex)
     esc(quote
         $Profile.@profile $ex
-        $(@__MODULE__).pprof()
+        $pprof()
     end)
 end
 
